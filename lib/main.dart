@@ -1,25 +1,30 @@
 import 'package:flutter/material.dart';
+import 'homepage.dart';
+import 'profilepage.dart';
+import 'searchpage.dart';
+import 'notificationpage.dart';
 
 void main() => runApp(Github());
 
-class Github extends StatelessWidget {
+//class Github extends StatelessWidget {
+//  @override
+//  Widget build(BuildContext context) {
+//    return MaterialApp(
+//      debugShowCheckedModeBanner: false,
+//      home: Mainpage(),
+//    );
+//  }
+//}
+
+class Github extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Mainpage(),
-    );
-  }
+  _GithubState createState() => _GithubState();
 }
 
-class Mainpage extends StatefulWidget {
-  @override
-  _MainpageState createState() => _MainpageState();
-}
-
-class _MainpageState extends State<Mainpage> {
+class _GithubState extends State<Github> {
   int _selectedpage = 0;
   final _pageoptions = [
+
     // CoronaVirus(),
     // Syptoms(),
     //Aboutus(),
@@ -27,7 +32,7 @@ class _MainpageState extends State<Mainpage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Corona Tracker',
+      title: 'Github',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: _pageoptions[_selectedpage],
