@@ -40,8 +40,9 @@ class _GithubState extends State<Github> {
         body: _pageoptions[_selectedpage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedpage,
-          selectedItemColor: Colors.pink,
-          unselectedItemColor: Colors.black,
+          selectedItemColor: Colors.blue[700],
+          unselectedItemColor: Colors.grey[600],
+          backgroundColor: Colors.grey[800],
           onTap: (int index) {
             setState(() {
               _selectedpage = index;
