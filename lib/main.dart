@@ -24,7 +24,9 @@ class Github extends StatefulWidget {
 class _GithubState extends State<Github> {
   int _selectedpage = 0;
   final _pageoptions = [
-
+    Homepage(),
+    Search(),
+    Pagenotification(),
     // CoronaVirus(),
     // Syptoms(),
     //Aboutus(),
