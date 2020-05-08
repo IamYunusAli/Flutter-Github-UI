@@ -8,6 +8,18 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.grey[800],
+        leading: CircleAvatar(
+          child: Image(image: AssetImage('')),
+        ),
+        title: Text(
+          'Inbox',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+      backgroundColor: Colors.black,
+    );
   }
 }
