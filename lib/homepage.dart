@@ -12,14 +12,15 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         backgroundColor: Colors.grey[800],
         leading: CircleAvatar(
-          child: Image(image: AssetImage('')),
+          radius: 2,
+          backgroundImage: AssetImage('assets/yunus.jpg'),
         ),
         title: Text(
           'Inbox',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.orange,
     );
   }
 }
