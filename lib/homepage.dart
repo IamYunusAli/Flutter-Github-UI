@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'utils.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -10,17 +11,30 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[800],
-        leading: CircleAvatar(
-          radius: 2,
-          backgroundImage: AssetImage('assets/yunus.jpg'),
+        backgroundColor: GAppbarColor,
+        leading: Padding(
+          padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
+          child: CircleAvatar(
+            maxRadius: 0.1,
+            backgroundImage: AssetImage('assets/yunus.jpg'),
+          ),
         ),
         title: Text(
           'Inbox',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        actions: [
+          Icon(
+            Icons.language,
+            color: GIconColor,
+          ),
+        ],
       ),
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.black,
+      body: Container(
+        height: MediaQuery.of(context).size.height / 2,
+        color: GBodyColor,
+      ),
     );
   }
 }
