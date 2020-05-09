@@ -13,7 +13,7 @@ class _SearchState extends State<Search> {
       appBar: AppBar(
         backgroundColor: GAppbarColor,
         leading: Padding(
-          padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
+          padding: const EdgeInsets.all(10),
           child: CircleAvatar(
             maxRadius: 0.1,
             backgroundImage: AssetImage('assets/yunus.jpg'),
