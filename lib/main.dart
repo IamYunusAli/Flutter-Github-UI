@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:githubui/utils.dart';
 import 'homepage.dart';
-import 'profilepage.dart';
 import 'searchpage.dart';
 import 'notificationpage.dart';
+import 'utils.dart';
 
 void main() => runApp(Github());
 
@@ -40,9 +41,9 @@ class _GithubState extends State<Github> {
         body: _pageoptions[_selectedpage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedpage,
-          selectedItemColor: Colors.blue[700],
+          selectedItemColor: GIconColor,
           unselectedItemColor: Colors.grey[600],
-          backgroundColor: Colors.grey[800],
+          backgroundColor: GBottomAppBarColor,
           onTap: (int index) {
             setState(() {
               _selectedpage = index;
