@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:githubui/profilepage.dart';
 import 'utils.dart';
 
 class Homepage extends StatefulWidget {
@@ -17,6 +18,15 @@ class _HomepageState extends State<Homepage> {
           child: CircleAvatar(
             maxRadius: 0.1,
             backgroundImage: AssetImage('assets/yunus.jpg'),
+            child: GestureDetector(onTap: () {
+              // Navigator.of(context).pop();
+              Navigator.push(
+                context,
+                new MaterialPageRoute(
+                  builder: (BuildContext context) => new Profile(),
+                ),
+              );
+            }),
           ),
         ),
         title: Text(
