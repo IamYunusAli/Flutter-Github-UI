@@ -20,13 +20,16 @@ class _SearchState extends State<Search> {
           ),
         ),
         title: Text(
-          'Inbox',
+          'Search',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
-          Icon(
-            Icons.language,
-            color: GIconColor,
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Icon(
+              Icons.search,
+              color: GIconColor,
+            ),
           ),
         ],
       ),

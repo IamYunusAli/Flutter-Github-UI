@@ -13,7 +13,7 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         backgroundColor: GAppbarColor,
         leading: Padding(
-          padding: const EdgeInsets.only(right: 8.0),
+          padding: const EdgeInsets.all(10),
           child: CircleAvatar(
             maxRadius: 0.1,
             backgroundImage: AssetImage('assets/yunus.jpg'),
@@ -24,9 +24,12 @@ class _HomepageState extends State<Homepage> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
-          Icon(
-            Icons.add_circle_outline,
-            color: GIconColor,
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Icon(
+              Icons.add_circle_outline,
+              color: GIconColor,
+            ),
           ),
         ],
       ),

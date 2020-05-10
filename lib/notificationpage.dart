@@ -24,16 +24,18 @@ class _PagenotificationState extends State<Pagenotification> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
-          Icon(
-            Icons.language,
-            color: GIconColor,
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: Icon(
+              Icons.filter_list,
+              color: GIconColor,
+            ),
           ),
         ],
       ),
       backgroundColor: Colors.black,
       body: Container(
         height: MediaQuery.of(context).size.height / 2,
-        color: GBodyColor,
       ),
     );
   }
