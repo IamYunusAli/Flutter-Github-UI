@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'utils.dart';
 
@@ -34,8 +35,27 @@ class _PagenotificationState extends State<Pagenotification> {
         ],
       ),
       backgroundColor: Colors.black,
-      body: Container(
-        height: MediaQuery.of(context).size.height / 2,
+      body: Center(
+        child: Container(
+          //height: 10,
+          //width: 20,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  // to be finished
+                  Image(
+                    fit: BoxFit.fitWidth,
+                    image: AssetImage('assets/github.jpg'),
+                  )
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
