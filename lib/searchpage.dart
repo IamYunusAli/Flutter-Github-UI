@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:githubui/profilepage.dart';
 import 'utils.dart';
 
 class Search extends StatefulWidget {
@@ -17,6 +18,16 @@ class _SearchState extends State<Search> {
           child: CircleAvatar(
             maxRadius: 0.1,
             backgroundImage: AssetImage('assets/yunus.jpg'),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => Profile(),
+                  ),
+                );
+              },
+            ),
           ),
         ),
         title: Text(
