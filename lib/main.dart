@@ -26,8 +26,8 @@ class _GithubState extends State<Github> {
   int _selectedpage = 0;
   final _pageoptions = [
     Homepage(),
-    Search(),
     Pagenotification(),
+    Search(),
     // CoronaVirus(),
     // Syptoms(),
     //Aboutus(),
@@ -59,17 +59,17 @@ class _GithubState extends State<Github> {
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.accessibility,
+                  Icons.notifications_none,
                 ),
                 title: Text(
-                  "Symptoms",
+                  "Notifications",
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.error_outline,
+                  Icons.search,
                 ),
                 title: Text(
-                  "Aboutus",
+                  "Search",
                 ))
           ],
         ),
