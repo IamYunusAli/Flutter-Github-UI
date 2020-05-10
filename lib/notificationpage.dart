@@ -40,19 +40,47 @@ class _PagenotificationState extends State<Pagenotification> {
           //height: 10,
           //width: 20,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // to be finished
-                  Image(
-                    fit: BoxFit.fitWidth,
-                    image: AssetImage('assets/github.jpg'),
-                  )
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    child: Image(image: AssetImage('assets/github.jpg')),
+                  ),
                 ],
               ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'All Caught Up!',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 23,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Take a break , write some code and do \n                  what you do best.',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
