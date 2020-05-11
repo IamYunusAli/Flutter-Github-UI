@@ -48,6 +48,23 @@ class _SearchState extends State<Search> {
       body: Container(
         height: MediaQuery.of(context).size.height / 2,
         color: GBodyColor,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              children: [
+                Text(
+                  'Recent search',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Clear',
+                  style: TextStyle(color: GIconColor),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
