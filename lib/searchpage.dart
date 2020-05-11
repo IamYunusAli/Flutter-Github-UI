@@ -55,7 +55,7 @@ class _SearchState extends State<Search> {
               children: [
                 Text(
                   'Recent search',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 Text(
                   'Clear',
