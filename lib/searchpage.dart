@@ -46,25 +46,33 @@ class _SearchState extends State<Search> {
       ),
       backgroundColor: Colors.black,
       body: Container(
-        height: MediaQuery.of(context).size.height / 2,
+        height: MediaQuery.of(context).size.height / 3,
         color: GBodyColor,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              children: [
-                Text(
-                  'Recent search',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.white),
-                ),
-                Text(
-                  'Clear',
-                  style: TextStyle(color: GIconColor),
-                ),
-              ],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Recent search',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 17),
+                  ),
+                  Text(
+                    'CLEAR',
+                    style: TextStyle(
+                      color: GIconColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
