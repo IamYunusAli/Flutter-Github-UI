@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Widget _buildRepoCard(
-  String imgpath,
+  String imgPath,
   String username,
   String title,
   String desc,
