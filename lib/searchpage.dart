@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:githubui/profilepage.dart';
 import 'utils.dart';
+import 'widgets/SearchCard.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -51,7 +52,7 @@ class _SearchState extends State<Search> {
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
-            children: [
+            children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -70,11 +71,37 @@ class _SearchState extends State<Search> {
                     ),
                   ),
                 ],
-              )
+              ),
+              SearchList(),
+              //_buildSearchCard('fuck', 17, '', 15),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildSearchCard(
+      String search, double font1, String searched, double font2) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          search,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: font1,
+          ),
+        ),
+        Text(
+          searched,
+          style: TextStyle(
+            color: GIconColor,
+            fontSize: font2,
+          ),
+        ),
+      ],
     );
   }
 }
