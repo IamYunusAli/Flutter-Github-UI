@@ -59,7 +59,7 @@ class _GithubState extends State<Github> {
                 )),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.notifications_none,
+                  Icons.notifications,
                 ),
                 title: Text(
                   "Notifications",
