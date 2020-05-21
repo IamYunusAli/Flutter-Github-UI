@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:githubui/profilepage.dart';
 import 'utils.dart';
+import 'package:githubui/widgets/homelistwidget.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -47,6 +49,15 @@ class _HomepageState extends State<Homepage> {
       body: Container(
         height: MediaQuery.of(context).size.height / 2,
         color: GBodyColor,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              HomeList(),
+            ],
+          ),
+        ),
       ),
     );
   }
