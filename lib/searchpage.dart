@@ -51,29 +51,33 @@ class _SearchState extends State<Search> {
         color: GBodyColor,
         child: Padding(
           padding: const EdgeInsets.all(10),
-          child: Column(
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Recent search',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 17),
+          child: ListView(
+            children: [
+              Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Recent search',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 17),
+                      ),
+                      Text(
+                        'CLEAR',
+                        style: TextStyle(
+                          color: GIconColor,
+                          fontSize: 15,
+                        ),
+                      ),
+                    ],
                   ),
-                  Text(
-                    'CLEAR',
-                    style: TextStyle(
-                      color: GIconColor,
-                      fontSize: 15,
-                    ),
-                  ),
+                  SearchList(),
+                  //_buildSearchCard('fuck', 17, '', 15),
                 ],
               ),
-              SearchList(),
-              //_buildSearchCard('fuck', 17, '', 15),
             ],
           ),
         ),
