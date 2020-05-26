@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:githubui/utils.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 class HomeList extends StatefulWidget {
   @override
@@ -24,15 +25,17 @@ class _HomeListState extends State<HomeList> {
         SizedBox(
           height: 10,
         ),
-        homeCard(CIconColor2, Icons.error_outline, 'Pull Requests'),
+        homeCard(
+            CIconColor2, MaterialCommunityIcons.source_pull, 'Pull Requests'),
         SizedBox(
           height: 10,
         ),
-        homeCard(CIconColor3, Icons.error_outline, 'Repositories'),
+        homeCard(CIconColor3, MaterialCommunityIcons.notebook_outline,
+            'Repositories'),
         SizedBox(
           height: 10,
         ),
-        homeCard(CIconColor4, Icons.error_outline, 'Organizations'),
+        homeCard(CIconColor4, Icons.people_outline, 'Organizations'),
         SizedBox(
           height: 10,
         ),
@@ -60,7 +63,7 @@ class _HomeListState extends State<HomeList> {
               child: IconButton(
                 icon: Icon(
                   icons,
-                  size: 25,
+                  size: 27,
                   color: CIconTextColor,
                 ),
                 onPressed: null,

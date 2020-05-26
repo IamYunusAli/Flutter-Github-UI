@@ -47,7 +47,7 @@ class _HomepageState extends State<Homepage> {
       ),
       backgroundColor: Colors.black,
       body: Container(
-        height: MediaQuery.of(context).size.height / 2,
+        height: MediaQuery.of(context).size.height / 2 + 50,
         color: GBodyColor,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -55,6 +55,61 @@ class _HomepageState extends State<Homepage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               HomeList(),
+              SizedBox(
+                height: 5,
+              ),
+              Divider(
+                color: Colors.grey,
+              ),
+              SizedBox(
+                height: 4,
+              ),
+              Text(
+                'Favorites',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 19,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Add favorite repositories for quick access at \n '
+                    '       anytime , without having to search',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Container(
+                height: 40,
+                decoration: BoxDecoration(
+                  color: GButtonColor,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "ADD FAVORITES",
+                      style: TextStyle(
+                        color: GIconColor,
+                        fontSize: 16,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
