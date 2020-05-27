@@ -39,7 +39,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
         ),
         personalCard(
           Feather.user,
-          '20 followers, 4 follwing ',
+          '20 followers, 4 following ',
           14,
         ),
         SizedBox(
