@@ -18,28 +18,28 @@ class _RepoCardState extends State<RepoCard> {
           repoCard(
             'Bank-Profile',
             'A flutter Ui profile for bank account',
-            'dart',
+            'Dart',
             '23',
             Colors.teal,
           ),
           repoCard(
             'Maed-Profile',
             'A Flutter Profile of UI',
-            'dart',
+            'Dart',
             '8',
             Colors.teal,
           ),
           repoCard(
             'awesome-login',
             'A flutter app Login UI',
-            'dart',
+            'Dart',
             '6',
             Colors.teal,
           ),
           repoCard(
             'astu-nav',
             'a School project using Flutter framework and google maps api',
-            'dart',
+            'Dart',
             '4',
             Colors.teal,
           ),
@@ -132,7 +132,7 @@ class _RepoCardState extends State<RepoCard> {
                       size: 16,
                     ),
                     SizedBox(
-                      width: 4,
+                      width: 5,
                     ),
                     Text(
                       lang,
@@ -146,11 +146,11 @@ class _RepoCardState extends State<RepoCard> {
                   children: [
                     Icon(
                       Icons.star,
-                      color: Colors.orange,
+                      color: Colors.amber,
                       size: 16,
                     ),
                     SizedBox(
-                      width: 4,
+                      width: 5,
                     ),
                     Text(
                       star,
