@@ -11,11 +11,11 @@ The screenshots below are taken on a Pixel 3 android emulator.
 
 | 1 | 2|
 |------|-------|
-|<img src="./screenshots/Home.png" width="300">|<img src="./screenshots/Inbox.png" width="300">|
+|<img src="/screenshots/Home.png" width="300">|<img src="/screenshots/Inbox.png" width="300">|
 
 | 3 | 4|
 |------|-------|
-|<img src="./screenshots/search.png" width="300">|<img src="./screenshots/Profile.png" width="300">|
+|<img src="/screenshots/search.png" width="300">|<img src="/screenshots/Profile.png" width="300">|
 
 ## ❔ Requirements to Run 
 - A Computer with any Operating System (ie. MacOS X, Linux, Windows)
