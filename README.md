@@ -4,18 +4,20 @@ A Flutter UI template of a The Official Github App.
 
 ### Don't forget to star ⭐ the repo and FOLLOW ME if you like what you see😉.
 
+
 ![Twitter Follow](https://img.shields.io/twitter/follow/IamYunusAli?style=social) ![GitHub followers](https://img.shields.io/github/followers/iamyunusali?style=social) 
+
 
 # 📸 Screenshots
 The screenshots below are taken on a Pixel 3 android emulator.
 
 | 1 | 2|
 |------|-------|
-|<img src="/screenshots/Home.png" width="300">|<img src="/screenshots/Inbox.png" width="300">|
+|<img src="screenshot/Home.png" width="300">|<img src="screenshot/Inbox.png" width="300">|
 
 | 3 | 4|
 |------|-------|
-|<img src="/screenshots/search.png" width="300">|<img src="/screenshots/Profile.png" width="300">|
+|<img src="screenshot/search.png" width="300">|<img src="screenshot/Profile.png" width="300">|
 
 ## ❔ Requirements to Run 
 - A Computer with any Operating System (ie. MacOS X, Linux, Windows)
