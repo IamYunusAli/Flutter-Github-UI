@@ -1,6 +1,35 @@
-# githubui
+# 🤓 Github Mobile App UI
 
-A new Flutter application.
+A Flutter UI template of a The Official Github App.
+
+### Don't forget to star ⭐ the repo and FOLLOW ME if you like what you see😉.
+
+![Twitter Follow](https://img.shields.io/twitter/follow/IamYunusAli?style=social) ![GitHub followers](https://img.shields.io/github/followers/iamyunusali?style=social) 
+
+# 📸 Screenshots
+The screenshots below are taken on a Pixel 3 android emulator.
+
+| 1 | 2|
+|------|-------|
+|<img src="screenshots/Home.png" width="300">|<img src="screenshots/Inbox.png" width="300">|
+
+| 3 | 4|
+|------|-------|
+|<img src="screenshots/search.png" width="300">|<img src="screenshots/Profile.png" width="300">|
+
+## ❔ Requirements to Run 
+- A Computer with any Operating System (ie. MacOS X, Linux, Windows)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+- Knowledge on Dart and Flutter
+ 
+## ✔ Steps 
+ 1️⃣ Fork the Repo
+ 2️⃣ Clone the Repo `git clone https://github.com/IamYunusAli/Flutter-Github-UI.git`
+ 3️⃣ Cd `Flutter-Github-UI`
+ 4️⃣ Flutter run
+ 
+
+
 
 ## Getting Started
 
