@@ -11,11 +11,11 @@ A Flutter UI template of a The Official Github App.
 # 📸 Screenshots
 The screenshots below are taken on a Pixel 3 android emulator.
 
-| 1 | 2|
+| 1.Home | 2.Inbox|
 |------|-------|
 |<img src="screenshot/Home.png" width="300">|<img src="screenshot/Inbox.png" width="300">|
 
-| 3 | 4|
+| 3.Search| 4.Profile|
 |------|-------|
 |<img src="screenshot/search.png" width="300">|<img src="screenshot/Profile.png" width="300">|
 
